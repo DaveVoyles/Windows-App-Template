@@ -1,0 +1,361 @@
+{
+	"homeURL": "http://davevoyles.azurewebsites.net/",
+	"navigation": {
+		"hideOnPageBackButton": false,
+		"hideBackButtonOnMatch": [
+			"{baseURL}/Json#livetiles"
+		],
+		"pageLoadingPartial": "/template/partials/page-loading.html"
+	},
+	"errors": {
+	    "showAlertOnError": false,
+		"alertMessage": "Sorry, but there was an error. It has been logged. Please contact us if the issue continues.",
+		"redirectToErrorPage": false,
+		"errorPageURL": "error-example.html"
+	},
+	"logging": {
+		"enabled": true,
+		"level": "log",
+		"disableWithoutDebugger": false,
+		"hideTagDisplay": true,
+		"ignoreTags": [
+			"winjs"
+		],
+		"logErrorsForIgnoredTags": true,
+		"overrideConsoleMethods": true,
+		"disableConsoleLog": false,
+		"fileLog": {
+			"enabled": true,
+			"level": "info",
+			"filename": "logs\\wat-docs_%D.log",
+			"format": "%L on Line %l of %f\r\n%D %T: %M (%t)",
+			"maxLogFiles": 7
+		}
+	},
+	"share": {
+		"enabled": true,
+		"title": "WAT Documentation",
+		"url": "{currentURL}",
+		"screenshot": true,
+		"message": "Check out the Web Application Template for Windows Store apps {url}, and get the app {appUrl}"
+	},	
+	"offline": {
+		"enabled": true,
+		"message": "It looks like you are offline. Please reconnect to use this application.",
+		"useSuperCache": false,
+		"addIndexedDBSupport": false,
+		"imagesGuardBand": true
+	},
+	"customScript": {
+		"scriptFiles": [
+			"injection-script-example.js"
+		]
+	},
+	"appBar": {
+		"enabled": true,
+		"makeSticky": false,
+		"buttons": [
+			{
+				"label": "Settings",
+				"icon": "edit",
+				"action": "settings"
+			}
+		]
+	},
+	"navBar": {
+		"enabled": true,
+		"maxRows": 2,
+		"makeSticky": false,
+		"buttons": [
+			{
+				"label": "Back",
+				"icon": "back",
+				"action": "back"
+			},
+			{
+				"label": "home",
+				"icon": "home",
+				"action": "home"
+			},
+			{
+				"label": "Evangelists",
+				"icon": "people",
+				"action": "nested",
+				"children": [
+					{
+						"label": "Stacey Mulcahy",
+				    	"icon": "people",
+						"action": "http://thebitchwhocodes.com/"
+					},
+					{
+						"label": "Jason Walters",
+						"icon": "people",
+						"action": "http://glitchbeam.com/"
+					},
+					{
+						"label": "Maria Naggaga",
+			            "icon": "people",
+						"action": "http://marianaggaga.azurewebsites.net/"
+					},
+                   	{
+						"label": "Jesus Aguilar",
+			            "icon": "people",
+						"action": "http://giventocode.com/"
+					},
+					{
+						"label": "Nick Landry",
+			            "icon": "people",
+						"action": "http://www.ageofmobility.com/"
+					},
+                    {
+						"label": "Amanda Lange",
+			            "icon": "people",
+						"action": "http://secondtruth.com/"
+					},
+                  	{
+						"label": "Bob Familiar",
+			            "icon": "people",   
+						"action": "http://www.structuretoobig.com/"
+					},
+					{
+						"label": "Steve Maier",
+			            "icon": "people",
+						"action": "http://42base13.net/"
+					},
+               		{
+						"label": "Joshua Drew",
+			            "icon": "people",
+						"action": "http://drew5.net/"
+					},
+                    {
+						"label": "Brian Hitney",
+						"icon": "people",
+						"action": "http://www.structuretoobig.com/"
+					},
+					{
+						"label": "Joe Healy",
+						"icon": "people",
+						"action": "http://blogs.msdn.com/devfish"
+					},					
+                    {
+						"label": "Diego Rivera",
+					    "icon": "people",
+						"action": "http://insomnesagresivos.blogspot.com/"
+					},
+                    {
+						"label": "Tara Walker",
+						"icon": "people",
+						"action": "http://tarathegeekgirl.net/"
+					}
+				]
+			},
+            {
+            	"label": "Win Phone",
+				"icon": "cellphone",
+				"action": "nested",
+				"children": [
+					{
+				    "label": "Open Source Projects",
+				    "icon": "cellphone",
+				    "action": "http://davevoyles.azurewebsites.net/xna-windows-phone-8/"
+					},
+                    {
+				    "label": "Intro to WP8 dev",
+				    "icon": "cellphone",
+				    "action": "https://www.facultyresourcecenter.com/curriculum/9175-introtoapps.aspx?c1=en-us&c2=0"
+					},
+                    {
+				    "label": "Start WP8 Dev",
+				    "icon": "cellphone",
+				    "action": "http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402529(v=vs.105).aspx"
+					},
+                    {
+				    "label": "[VID] Unity WP8",
+				    "icon": "cellphone",
+				    "action": "http://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP50-Introducing-Unity-for-Windows-Phone-Devleopment"
+					},
+                    {
+				    "label": "Universal Apps",
+				    "icon": "cellphone",
+				    "action": "http://blogs.msdn.com/b/davrous/archive/2014/05/12/creating-a-html5-phone-tablet-amp-pc-game-using-the-universal-apps-project-for-windows-stores.aspx"
+					}
+                 ]
+            },
+			{
+            	"label": "Unity",
+				"icon": "browsephotos",
+				"action": "nested",
+				"children": [
+					{
+				    "label": "Top Down 2D Tutorial",
+				    "icon": "browsephotos",
+				    "action": "http://indiedevspot.azurewebsites.net/2014/04/25/build-a-2d-top-down-game-zero-to-published-part-1/"
+					},
+                    {
+				    "label": "Asset Reviews",
+				    "icon": "browsephotos",
+				    "action": " http://unityassetreview.com/"
+					},
+                    {
+				    "label": "List of resources",
+				    "icon": "browsephotos",
+				    "action": "http://www.virtualgamelab.com/unity-resources.html"
+					}
+                 ]
+			},
+            {
+            	"label": "HTML5",
+				"icon": "world",
+				"action": "nested",
+				"children": [
+					{
+				    "label": "Impact.JS",
+				    "icon": "world",
+				    "action": "http://davevoyles.azurewebsites.net/html5-javascript/"
+					},
+                    {
+				    "label": "Cordova",
+				    "icon": "world",
+				    "action": "http://davevoyles.azurewebsites.net/apache-cordova-integrated-visual-studio-multi-device-hybrid-app-development/"
+					},
+                    {
+				    "label": "Xplatform tools",
+				    "icon": "world",
+				    "action": "http://www.slideshare.net/DaveVoyles/building-html5-apps-for-cross-platform-mobile"
+					}
+                 ]
+			},
+            {
+            	"label": "Students",
+				"icon": "library",
+				"action": "nested",
+				"children": [
+					{
+				    "label": "Dreamspark",
+				    "icon": "library",
+				    "action": "https://build.windowsstore.com/DreamSpark/#fbid=_rym5eCW63n"
+					},
+                    {
+				    "label": "BizSpark",
+				    "icon": "library",
+				    "action": "http://wootstudio.ca/startups/bizspark.aspx"
+					},
+                    {
+				    "label": "Imagine Fund",
+				    "icon": "library",
+				    "action": "http://www.microsoftimaginefund.com/"
+                    }
+                 ]
+            }
+		]
+	},
+	"livetile": {
+		"enabled": true,
+		"periodicUpdate": 1,
+		"enableQueue": true,
+		"tilePollFeed": "http://wat-docs.azurewebsites.net/feed"
+	},
+	"notifications": {
+		"enabled": false,
+		"azureNotificationHub": {
+			"enabled": true,
+			"endpoint": "https://wat-demo.servicebus.windows.net/",
+			"secret": "bPQTTVcagkyDfsz3M+OIhwJNxP+Jy2pXDfmUomSUVa4=",
+			"path": "wat-demo",
+			"tags": [
+				"Live Tiles", "Tag 1", "Tag 2", "Tag 3"
+			]
+		}
+	},
+	"redirects": {
+		"enabled": true,
+		"enableCaptureWindowOpen": true,
+		"refreshOnModalClose": true,
+		"rules": [
+			{
+				"pattern": "http://getbootstrap.com?",
+				"action": "showMessage",
+				"message": "Sorry, but you can't access this feature in the native app, please visit us online at http://wat-docs.azurewebsites.net"
+			},
+			{
+				"pattern": "*.microsoft.com*",
+				"action": "showMessage",
+				"message": "Redirecting you to the Microsoft website..."
+			},
+			{
+				"pattern": "http://msdn.microsoft.com/*",
+				"action": "popout"
+			},
+			{
+				"pattern": "{baseURL}/Json#search",
+				"action": "redirect",
+				"url": "http://bing.com"
+			},
+			{
+				"pattern": "*/drive_api/calculator/login",
+				"action": "modal",
+				"hideCloseButton": true,
+				"closeOnMatch": "*/drive_api/calculator/complete_login"
+			}
+		]
+	},
+	"settings": {
+		"enabled": true,
+		"privacyUrl": "http://wat-docs.azurewebsites.net/Privacy",
+		"items": [
+			{
+				"title": "Support",
+				"page": "http://wat-docs.azurewebsites.net/Support",
+				"loadInApp": true
+			},
+			{
+				"title": "Codeplex Site",
+				"page": "http://www.codeplex.com"
+			}
+		]
+	},
+	"styles": {
+		"setViewport": true,
+		"targetWidth": "",
+		"targetHeight": "800px",
+		"suppressTouchAction": false,
+		"extendedSplashScreenBackground": "#464646",
+		"hiddenElements":[
+			"header", ".bs-header"
+		],
+		"backButton": {
+			"borderColor": "#FFFFFF",
+			"color": "#FFFFFF"
+		},
+		"wrapperCssFile": "/css/wrapper-styles.css",
+		"customCssFile": "/css/injected-styles.css",
+		"customCssString": "body {padding:0;font-size: 14pt;} .container{margin-left:120px; margin-right:0px;} .bs-header{height: 140px;padding-left:0px;} .bs-header h1{margin:0;margin-top:10px;} .bs-header h1{margin-right:0;} .bs-header p{display:none;}"
+	},
+	"header": {
+			"enabled": true,
+			"backgroundColor": "#7fba00",
+			"logo": "/images/widelogo.scale-100.png",
+			"title": {
+				"enabled": true,
+				"displayOnHomePage": true
+			}
+	},
+	"search": {
+		"enabled": true,
+		"searchURL": "http://wat-docs.azurewebsites.net/search/?query={searchTerm}",
+		"useOnScreenSearchBox": true,
+		"onScreenSearchOptions": {
+			"chooseSuggestionOnEnter": false,
+	        "focusOnKeyboardInput": false,
+	        "placeholderText": "What are you looking for?",
+	        "searchHistoryDisabled": false
+		}
+	},
+	"secondaryPin": {
+        "enabled": true,
+		"buttonText": "Pin It!",
+		"squareImage": "/images/logo.scale-100.png",
+		"wideImage": "/images/widelogo.scale-100.png"
+	},
+	"styleTheme": "dark"
+}
