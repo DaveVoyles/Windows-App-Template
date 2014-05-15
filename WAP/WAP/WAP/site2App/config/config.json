@@ -9,7 +9,7 @@
 	},
 	"errors": {
 	    "showAlertOnError": false,
-		"alertMessage": "Sorry, but there was an error. It has been logged. Please contact us if the issue continues.",
+		"alertMessage": "Sorry, but there was an error. It has been logged. Please contact me if the issue continues. Dvoyles@Microsoft.com",
 		"redirectToErrorPage": false,
 		"errorPageURL": "error-example.html"
 	},
@@ -34,10 +34,10 @@
 	},
 	"share": {
 		"enabled": true,
-		"title": "WAT Documentation",
+		"title": "Share this app",
 		"url": "{currentURL}",
 		"screenshot": true,
-		"message": "Check out the Web Application Template for Windows Store apps {url}, and get the app {appUrl}"
+		"message": "Check out the Dave Voyles' app for students {url}, and get the app {appUrl}"
 	},	
 	"offline": {
 		"enabled": true,
@@ -244,6 +244,38 @@
 				    "label": "Imagine Fund",
 				    "icon": "library",
 				    "action": "http://www.microsoftimaginefund.com/"
+                    },
+                    {
+				    "label": "Posts for students",
+				    "icon": "library",
+				    "action": "http://davevoyles.azurewebsites.net/category/students/"
+                    }
+                 ]
+            },
+            {
+            	"label": "Tools",
+				"icon": "mapdrive",
+				"action": "nested",
+				"children": [
+					{
+				    "label": "Web App Template",
+				    "icon": "mapdrive",
+				    "action": "http://www.techrepublic.com/article/windows-store-app-development-is-a-snap-with-this-template/"
+                    },
+                    {
+				    "label": "Win App Studio",
+				    "icon": "mapdrive",
+				    "action": "http://blogs.windows.com/windows/b/buildingapps/archive/2014/04/03/windows-app-studio-beta-build-a-windows-phone-and-windows-app-in-one-session-no-code-required.aspx"
+					},
+                    {
+				    "label": "Construct 2",
+				    "icon": "mapdrive",
+				    "action": "https://www.scirra.com/construct2"
+                    },
+                    {
+				    "label": "Game Maker",
+				    "icon": "mapdrive",
+				    "action": "https://www.google.com/search?q=Game+Maker&oq=Game+Maker&aqs=chrome..69i57l2j69i65l3j69i60.1088j0j4&sourceid=chrome&es_sm=93&ie=UTF-8"
                     }
                  ]
             }
@@ -253,10 +285,10 @@
 		"enabled": true,
 		"periodicUpdate": 1,
 		"enableQueue": true,
-		"tilePollFeed": "http://wat-docs.azurewebsites.net/feed"
+		"tilePollFeed": "http://davevoyles.azurewebsites.net/feed/"
 	},
 	"notifications": {
-		"enabled": false,
+		"enabled": true,
 		"azureNotificationHub": {
 			"enabled": true,
 			"endpoint": "https://wat-demo.servicebus.windows.net/",
@@ -301,16 +333,12 @@
 	},
 	"settings": {
 		"enabled": true,
-		"privacyUrl": "http://wat-docs.azurewebsites.net/Privacy",
+		"privacyUrl": "http://phlcollective.azurewebsites.net/privacy.html",
 		"items": [
 			{
-				"title": "Support",
-				"page": "http://wat-docs.azurewebsites.net/Support",
+				"title": "About Dave",
+				"page": "http://davevoyles.azurewebsites.net/bio/",
 				"loadInApp": true
-			},
-			{
-				"title": "Codeplex Site",
-				"page": "http://www.codeplex.com"
 			}
 		]
 	},
@@ -333,7 +361,7 @@
 	},
 	"header": {
 			"enabled": true,
-			"backgroundColor": "#7fba00",
+			"backgroundColor": "#919191",
 			"logo": "/images/widelogo.scale-100.png",
 			"title": {
 				"enabled": true,
@@ -341,7 +369,7 @@
 			}
 	},
 	"search": {
-		"enabled": true,
+		"enabled": false,
 		"searchURL": "http://wat-docs.azurewebsites.net/search/?query={searchTerm}",
 		"useOnScreenSearchBox": true,
 		"onScreenSearchOptions": {

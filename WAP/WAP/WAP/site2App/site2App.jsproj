@@ -49,8 +49,10 @@
     <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>site2App_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>C59884DDA6ABF6840207EE8D53BA9B0187C564CE</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>site2App_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>F0385CCE0676AA1032B2AAB3233251051FC6AB8A</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -63,15 +65,37 @@
     <Content Include="css\injected-styles.css" />
     <Content Include="css\wrapper-styles.css" />
     <Content Include="default.html" />
+    <Content Include="images\BadgeLogo.scale-100.png" />
+    <Content Include="images\BadgeLogo.scale-140.png" />
+    <Content Include="images\BadgeLogo.scale-180.png" />
     <Content Include="images\logo.scale-100.png" />
+    <Content Include="images\logo.scale-140.png" />
+    <Content Include="images\logo.scale-180.png" />
     <Content Include="images\smalllogo.scale-100.png" />
     <Content Include="images\splashscreen.scale-100.png" />
+    <Content Include="images\splashscreen.scale-140.png" />
+    <Content Include="images\splashscreen.scale-180.png" />
+    <Content Include="images\Square310x310Logo.scale-100.png" />
+    <Content Include="images\Square310x310Logo.scale-140.png" />
+    <Content Include="images\Square310x310Logo.scale-180.png" />
+    <Content Include="images\Square310x310Logo.scale-80.png" />
+    <Content Include="images\Square70x70Logo.scale-100.png" />
+    <Content Include="images\Square70x70Logo.scale-140.png" />
+    <Content Include="images\Square70x70Logo.scale-180.png" />
+    <Content Include="images\Square70x70Logo.scale-80.png" />
     <Content Include="images\storelogo.scale-100.png" />
+    <Content Include="images\storelogo.scale-140.png" />
+    <Content Include="images\storelogo.scale-180.png" />
     <Content Include="images\widelogo.scale-100.png" />
+    <Content Include="images\widelogo.scale-140.png" />
+    <Content Include="images\widelogo.scale-180.png" />
     <Content Include="injection-script-example.js" />
     <Content Include="js\default.js" />
     <Content Include="error-example.html" />
     <None Include="site2App_TemporaryKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="privacy.html" />
+    <None Include="site2App_StoreKey.pfx" />
     <Content Include="template\css\base.css" />
     <Content Include="template\css\ui-dark.css" />
     <Content Include="template\css\error.css" />

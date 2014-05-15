@@ -1,0 +1,4 @@
+MainPackage=C:\Users\DaveVoyles\SkyDrive\Development\win8\Windows-App-Template\WAP\WAP\WAP\site2App\bin\Release\site2App_1.1.0.0_Bundle\site2App_1.1.0.0_AnyCPU.appx
+SymbolPackage=C:\Users\DaveVoyles\SkyDrive\Development\win8\Windows-App-Template\WAP\WAP\WAP\site2App\AppPackages\site2App_1.1.0.0_Test\site2App_1.1.0.0_AnyCPU.appxsym
+ResourcePack=C:\Users\DaveVoyles\SkyDrive\Development\win8\Windows-App-Template\WAP\WAP\WAP\site2App\bin\Release\site2App_1.1.0.0_Bundle\site2App_1.1.0.0_scale-140.appx
+ResourcePack=C:\Users\DaveVoyles\SkyDrive\Development\win8\Windows-App-Template\WAP\WAP\WAP\site2App\bin\Release\site2App_1.1.0.0_Bundle\site2App_1.1.0.0_scale-180.appx
